@@ -9,6 +9,7 @@ to
 lmax = auxcell._bas[:,gto.ANG_OF].max()
 modchg_offset = -numpy.ones((chgcell.natm,lmax+1), dtype=int)
 ```
+in order to support g-functions
 
 Suspected line
 `green_igen/outcore.py` line 252 `for istep, mat in enumerate(lib.map_with_prefetch(process, auxranges)):`
